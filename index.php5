@@ -6,9 +6,9 @@
 // the list of feeds to add to the page.
 $feeds = array(
    'http://www.norka.fr/v4/rss.php5',
-   'http://twitter.com/statuses/user_timeline/26208481.rss',
+   'http://www.twitter.com/statuses/user_timeline/26208481.rss',
    'http://www.jblezoray.fr/blog/feed/',
-   'https://github.com/jblezoray.private.actor.atom?token=c1faa006c9b038a39f4f9f5336f3f25d',
+   'https://github.com/jblezoray.atom',
    'http://plusfeed.appspot.com/112674015772497514535' // google plus
 );
 
