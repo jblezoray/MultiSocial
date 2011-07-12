@@ -173,7 +173,7 @@ foreach ($feed->get_items() as $item):
 endforeach; 
 ?>
    
-   <div class="footer">Creation J.-B. Lézoray, 2011.<br/>Sources publically available on <a href="http://www.github.com">github</a></div>
+   <div class="footer">Creation J.-B. Lézoray, 2011.<br/>Sources publically available on <a href="https://github.com/jblezoray/MultiSocial">github</a></div>
 
 </body>
 </html>
