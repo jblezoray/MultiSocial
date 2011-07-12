@@ -1,0 +1,7 @@
+This project is a part of my personal website that I publish on github. 
+
+It fetches some RSS/ATOM feeds and publishes them on a dedicated HTML page, with a nice and clean design.
+
+Feel free to reuse it.
+
+See https://www.jblezoray.fr/multisocial/ for an exemple.
