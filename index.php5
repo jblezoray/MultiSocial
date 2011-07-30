@@ -58,8 +58,7 @@ date_default_timezone_set('Europe/Paris');
 include_once "simplepie.inc.php5";
 
 $feed = new SimplePie(); 
-//$feed->set_cache_duration (600); // in seconds
-$feed->set_cache_duration (10);
+$feed->set_cache_duration (3600); // in seconds
 $feed->handle_content_type(); // This makes sure that the content is sent to the browser as text/html and the UTF-8 character set (since we didn't change it).
 $feed->strip_htmltags(array_merge($feed->strip_htmltags, array('div', 'blockquote', 'p', 'a', 'br', 'ul', 'li')));
 $feed->set_feed_url($feeds); // Set which feed to process.
