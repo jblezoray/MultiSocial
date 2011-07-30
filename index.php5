@@ -198,11 +198,12 @@ $current_timestamp = time();
 $week_ts = false;
 $month_ts = false;
 $year_ts = false;
+$old_ts = false;
 
 foreach($savedItems as $item):
 
    // time separator
-   $post_timestamp = $item['d'];
+   $post_timestamp = $item[0];
    if (!$week_ts) {
       if ($current_timestamp - $post_timestamp > 3600 * 24) {
          echo "   <div class=\"time_separator\">This week</div>\n";
@@ -217,6 +218,11 @@ foreach($savedItems as $item):
       if ($current_timestamp - $post_timestamp > 3600 * 24 * 31) {
          echo "   <div class=\"time_separator\">This year</div>\n";
          $year_ts = true;
+      }
+   } else if (!$old_ts) {
+      if ($current_timestamp - $post_timestamp > 3600 * 24 * 365) {
+         echo "   <div class=\"time_separator\">More than a year old. </div>\n";
+         $old_ts = true;
       }
    }
    
